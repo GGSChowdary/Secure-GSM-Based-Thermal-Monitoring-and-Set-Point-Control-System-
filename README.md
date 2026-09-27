@@ -226,8 +226,13 @@ This project provides practical experience in:
 * Embedded system security and authentication
 * Real-time monitoring and alert generation
 
-## 👨‍💻 Project
 
-**Secure GSM-Based Thermal Monitoring and Set-Point Control System**
+## 👨‍💻 Author
 
-Developed using **LPC2148 ARM7 + Embedded C + GSM + DHT11 + AT24C256 EEPROM**.
+**Garapati Gowtham Sai Chowdary**
+
+**Technologies:** Embedded C | LPC2148 ARM7 | GSM | DHT11 | I²C | UART | AT24C256 EEPROM
+
+---
+
+
