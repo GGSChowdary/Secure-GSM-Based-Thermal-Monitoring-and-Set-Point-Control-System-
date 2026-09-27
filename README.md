@@ -1,4 +1,4 @@
-# Secure-GSM-Based-Thermal-Monitoring-and-Set-Point-Control-System-
+# Secure GSM-Based Thermal Monitoring and Set-Point Control System
 An Embedded C project using LPC2148 and GSM to monitor temperature/humidity, generate SMS alerts, and remotely update set points through password-protected SMS commands.
 
 ## 📌 Project Overview
@@ -226,12 +226,12 @@ This project provides practical experience in:
 * Embedded system security and authentication
 * Real-time monitoring and alert generation
 
+**Technologies:** Embedded C | LPC2148 ARM7 | GSM | DHT11 | I²C | UART | AT24C256 EEPROM
+
 
 ## 👨‍💻 Author
 
 **Garapati Gowtham Sai Chowdary**
-
-**Technologies:** Embedded C | LPC2148 ARM7 | GSM | DHT11 | I²C | UART | AT24C256 EEPROM
 
 ---
 
