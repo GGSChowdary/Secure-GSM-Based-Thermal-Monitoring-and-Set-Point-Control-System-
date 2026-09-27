@@ -106,8 +106,6 @@ LPC2148
 └── LEDs/Buzzer → Fault & Security Indication
 ```
 ## 📂 Project Structure
-## 📂 Project Structure
-
 ```text
 Secure-GSM-Thermal-Monitoring/
 │
