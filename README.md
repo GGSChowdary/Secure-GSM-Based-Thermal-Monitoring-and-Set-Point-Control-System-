@@ -106,21 +106,91 @@ LPC2148
 └── LEDs/Buzzer → Fault & Security Indication
 ```
 ## 📂 Project Structure
+## 📂 Project Structure
 
-├── main.c                  		→ Main application (set-point control, sensor loop, SMS command handling)
-├── gsm.c / gsm.h            		→ GSM module driver (init, send_sms, receive_sms) — UART interrupt based
-├── uart.h/, UART_INT.c       	→ UART polling & interrupt-driven drivers
-├── dht11.c/.h                	→ Temperature & humidity sensor driver
-├── i2c.c/.h, i2c_eeprom.c/.h 	→ I2C driver + AT24C256 EEPROM (set-points, password, mobile number storage)
-├── lcd.c/.h                   	→ 16x2 LCD display driver
-├── keypad.c/.h                	→ 4x4 matrix keypad driver
-├── rtc.c/.h                 		→ On-chip RTC (SMS timestamping)
-├── eint0.c                  		→ External interrupt ISR (local set-point/password menu)
-├── menu.c/.h                		→ Local configuration menu logic
-├── delay.c/.h                	→ Delay utilities
-├── Startup.s                 	→ ARM7 startup code
-├── GSM.uvproj                	→ Keil µVision5 project file
-└── major_test.hex            	→ Precompiled firmware (ready to flash via Flash Magic)
+```text
+Secure-GSM-Thermal-Monitoring/
+│
+├── main.c
+│   └── Main application: sensor monitoring, set-point control,
+│       SMS command handling and system control
+│
+├── gsm.c
+├── gsm.h
+│   └── GSM M660A driver: initialization, SMS sending and receiving
+│       using UART interrupt-based communication
+│
+├── uart.c
+├── uart.h
+├── UART_INT.c
+│   └── UART polling and interrupt-driven communication
+│
+├── dht11.c
+├── dht11.h
+│   └── DHT11 temperature and humidity sensor driver
+│
+├── i2c.c
+├── i2c.h
+├── i2c_eeprom.c
+├── i2c_eeprom.h
+│   └── I²C communication and AT24C256 EEPROM driver for storing
+│       set points, password and authorized mobile number
+│
+├── lcd.c
+├── lcd.h
+│   └── 16×2 LCD display driver
+│
+├── keypad.c
+├── keypad.h
+│   └── 4×4 matrix keypad driver for local user input
+│
+├── rtc.c
+├── rtc.h
+│   └── On-chip RTC for time stamping SMS alerts
+│
+├── eint0.c
+│   └── External Interrupt 0 ISR for local configuration access
+│
+├── menu.c
+├── menu.h
+│   └── Local set-point and password configuration menu
+│
+├── delay.c
+├── delay.h
+│   └── Delay utility functions
+│
+├── Startup.s
+│   └── ARM7 startup and initialization code
+│
+├── GSM.uvproj
+│   └── Keil µVision project file
+│
+└── major_test.hex
+    └── Precompiled firmware for LPC2148
+```
+
+### 📁 File Description
+
+| File              | Description                                    |
+| ----------------- | ---------------------------------------------- |
+| `main.c`          | Main application and system control logic      |
+| `gsm.c/.h`        | GSM M660A initialization and SMS communication |
+| `uart.c/.h`       | UART communication driver                      |
+| `UART_INT.c`      | UART interrupt handling                        |
+| `dht11.c/.h`      | Temperature and humidity sensor driver         |
+| `i2c.c/.h`        | I²C communication driver                       |
+| `i2c_eeprom.c/.h` | AT24C256 EEPROM read/write operations          |
+| `lcd.c/.h`        | 16×2 LCD driver                                |
+| `keypad.c/.h`     | 4×4 matrix keypad driver                       |
+| `rtc.c/.h`        | On-chip RTC and time-stamping                  |
+| `eint0.c`         | External Interrupt 0 service routine           |
+| `menu.c/.h`       | Local configuration menu                       |
+| `delay.c/.h`      | Delay functions                                |
+| `Startup.s`       | ARM7 startup code                              |
+| `GSM.uvproj`      | Keil µVision project configuration             |
+| `major_test.hex`  | Compiled firmware ready for programming        |
+
+> **Note:** The project source files implement the individual peripherals and communication modules described in the project documentation, including LCD, keypad, UART, EEPROM, DHT11 and GSM interfacing.
 
 ## 🛠️ Technologies Used
 
