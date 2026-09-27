@@ -1,0 +1,4 @@
+--cpu ARM7TDMI "startup.o" "delay.o" "eint0.o" "i2c.o" "i2c_eeprom.o" "keypad.o" "lcd.o" "main.o" "menu.o" "rtc.o" --strict --scatter "GSM.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\GSM.map" -o "GSM.axf"

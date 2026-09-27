@@ -1,0 +1,18 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\delay.o"
+".\eint0.o"
+".\i2c.o"
+".\i2c_eeprom.o"
+".\keypad.o"
+".\lcd.o"
+".\main.o"
+".\menu.o"
+".\rtc.o"
+".\dht11.o"
+".\uart_int.o"
+".\gsm.o"
+--strict --scatter ".\major_test.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\major_test.map" -o .\major_test.axf

@@ -1,0 +1,9 @@
+.\uart_int.o: UART_INT.c
+.\uart_int.o: C:\Keil\ARM\Inc\Philips\LPC21xx.h
+.\uart_int.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\uart_int.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\uart_int.o: delay.h
+.\uart_int.o: types.h
+.\uart_int.o: i2c_eeprom.h
+.\uart_int.o: types.h
+.\uart_int.o: i2c_eeprom_defines.h

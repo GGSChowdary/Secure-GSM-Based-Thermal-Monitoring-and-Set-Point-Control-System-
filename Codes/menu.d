@@ -1,0 +1,10 @@
+.\menu.o: menu.c
+.\menu.o: lcd.h
+.\menu.o: types.h
+.\menu.o: keypad_defines.h
+.\menu.o: types.h
+.\menu.o: delay.h
+.\menu.o: types.h
+.\menu.o: i2c_eeprom.h
+.\menu.o: types.h
+.\menu.o: i2c_eeprom_defines.h
